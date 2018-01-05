@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>My Facebook Pages</title>
+    <!-- link to Material icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <nav class="blue darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">My Facebook Pages</a>
+      <ul data-activates="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Con Allen <img class="circle responsive-img avatar" src="images/avatar.png"></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Con Allen <img class="circle responsive-img avatar" src="images/avatar.png"></a></li>
+        <div class="divider"></div>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+
+  <div class="section no-pad-bot">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12">
+          <a class="right btn-floating btn-large blue darken-4 waves-effect waves-light modal-trigger" href="#modal1">
+            <i class="large material-icons">add</i>
+          </a>
+        </div>
+      </div>
+<!-- card -->
+      <div class="row">
+        <div class="col m6">
+        </div>
+        <div class="col s12 m6">
+
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Facebook Page Name</span>
+              <!-- card icon -->
+              <i class="medium material-icons">phone</i>
+              <p>+353 (0) 12939906</p>
+              <!-- card icon -->
+              <i class="medium material-icons">mail</i>
+              <p>email@clientname.com</p>
+              <!-- card icon -->
+              <i class="medium material-icons">thumb_up</i>
+              <span class="likes"> 11,000 </span>
+            </div>
+            <div class="card-action right-align">
+              <a class="modal-action modal-close btn-flat" href="#">Delete</a>
+
+              <!-- modal trigger has been added -->
+              <a class="modal-action modal-close btn-flat  modal-trigger" href="#modal2">Edit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m6">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+<div class="closeSide">
+  <i id= "button2" data-activates="nav-mobile" class="large material-icons">cancel</i>
+</div>
+
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="title" type="text" class="validate">
+            <label for="title">Title <span class = "required"> *</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="fb_id" type="text" class="validate">
+            <label for="fb_id">Facebook Page Name/ID <span class = "required"> *</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="phone" type="text" class="validate">
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email <span class = "required"> *</span></label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn-flat">Save</a>
+      <a href="#!" class="modal-action modal-close btn-flat">Cancel</a>
+    </div>
+  </div>
+
+
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="title" type="text" class="validate" value="Facebook Page Name">
+            <!-- the below span class was used to syle the asterisk -->
+            <label for="title">Title <span class = "required">*</span> </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="fb_id" type="text" class="validate" value="123456789">
+            <label for="fb_id">Facebook Page Name/ID<span class = "required"> *</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="phone" type="text" class="validate" value="+353 (0) 12939906">
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" value="email@clientname.com">
+            <label for="email">Email <span class = "required"> *</span></label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn-flat">Save</a>
+      <a href="#!" class="modal-action modal-close btn-flat">Cancel</a>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- Load JQuery before scripts that depend on it -->
+  <script src="js/materialize.js"></script>  <!-- the latest materialize version has been added. so enable "onClose & onOpen event listeners" -->
+  <script src="js/init.js"></script>
+  <script src="js/custom.js"></script>
+
+
+
+  </body>
+</html>

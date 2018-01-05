@@ -1,0 +1,190 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+nav .brand-logo {
+	font-size: 1.3rem;
+}
+img.avatar {
+	height: 37px;
+	background-color: white;
+	float: right;
+	margin: 12px 0 0 12px;
+}
+#nav-mobile img.avatar {
+	margin: 5px 0 0 0;
+}
+#nav-mobile .divider {
+	margin: 0;
+}
+.likes {
+	font-size: 20px;
+  font-weight: 400;
+}
+.card .card-content .card-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.card .card-action.right-align{
+	padding: 16px 0px 16px 24px;
+}
+
+/* form colours */
+	/* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   .input-field input[type=email]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   .input-field input[type=email].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+   /*
+   the below styles where added to fix the input field bug. Now once the user clicks on an input its transformed -40% rather than -140% to improve
+   UI and to keep the label from flying off the page
+  */
+   .input-field label:not(.label-icon).active {
+       font-size: 1em;
+       -webkit-transform: translateY(-50%);
+       transform: translateY(-50%);
+   }
+   /*
+   the below sytles where added to fix the input field bug. Now once the user clicks on an input its transformed -10% rather than -140%
+  */
+
+   nav .input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
+       box-shadow: none;
+       border-bottom: 0.5px solid #cdced0;
+       background-color: #f3f3f3;
+       color: black;
+       padding: 0;
+   }
+
+   /*
+   the below sytles where added to add the facebook grey color to the page to improve the UI
+  */
+
+   .section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #e9ebee;
+}
+/*
+the below sytles where added to the sideNav bar to improve visability on the avatar icon
+*/
+
+.side-nav a {
+    color: rgba(0, 0, 0, 600.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 0 32px;
+    background-color: #eee;
+}
+
+.side-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.17);
+}
+
+materialize.css:4151
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*
+the below sytles where added to the sideNav bar to improve visability on the avatar icon
+*/
+
+.card .card-content {
+
+    color: black;
+}
+/*
+the below span class was used to syle the asterisk
+
+*/
+
+.required {
+  color:red;
+}
+
+/*
+the below code is for the card icons
+
+*/
+.card  i, .card [class^="mdi-"], .card  [class*="mdi-"], .card  i.material-icons {
+    display: block;
+    font-size: 24px;
+    height: 56px;
+    line-height: 56px;
+    float: left;
+    padding-right: 10px;
+    color:black;
+}
+
+/*
+the below code adds a nice hover effect on the DELETE & EDIT buttons
+
+*/
+
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #3B5998;
+    margin-right: 24px;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #060606;
+}
+
+.closeSide i, .closeSide [class^="mdi-"], .closeSide [class*="mdi-"], .closeSide i.material-icons {
+    display: block;
+    font-size: 24px;
+    height: 56px;
+    line-height: 56px;
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 40px;
+    z-index: 1000;
+    cursor:pointer;
+}
